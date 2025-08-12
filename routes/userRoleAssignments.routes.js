@@ -16,8 +16,6 @@ const { verifyTokenAndTenant } = require('../middlewares/auth.middleware');
  *   post:
  *     summary: Assign or update a role for a user
  *     tags: [User Role Assignments]
- *     security:
- *       - bearerAuth: []
  *     requestBody:
  *       required: true
  *       content:
@@ -47,8 +45,6 @@ const { verifyTokenAndTenant } = require('../middlewares/auth.middleware');
  *   get:
  *     summary: Get the role assigned to a user
  *     tags: [User Role Assignments]
- *     security:
- *       - bearerAuth: []
  *     parameters:
  *       - in: path
  *         name: userId
